@@ -1,0 +1,28 @@
+/* Set the background color of the scrollbar track */
+::-webkit-scrollbar {
+    background-color: #111;
+    width: 7px;
+}
+::-moz-scrollbar {
+    background-color: #111;
+    width: 7px;
+}
+::-ms-scrollbar {
+    background-color: #111;
+    width: 7px;
+}
+// scrollbar-color: gray #111;
+
+/* Set the color and shape of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+}
+::-moz-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+}
+::-ms-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+}
