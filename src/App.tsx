@@ -1,21 +1,61 @@
 import { Main } from './components/Main';
 import { Card } from './components/Card';
 import Title from './components/Title';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaReact, FaNodeJs, FaSass } from 'react-icons/fa';
-import data from './data.json';
+
+import { db } from './config/firebase';
+import { getDocs, collection } from 'firebase/firestore';
+
 function App() {
     const [mobileMenuDisplay, setMobileMenuDisplay] = useState('none');
     const [cardsDisplay, setCardsDisplay] = useState('flex');
+    const [projects, setProjects] = useState<
+        {
+            id: string;
+            title: string;
+            desc: string;
+            date: string;
+            technologies: string[];
+            image: string;
+        }[]
+    >([]);
+    const projectCollectionRef = collection(db, 'projects');
+
+    useEffect(() => {
+        const getProjectList = async () => {
+            const data = await getDocs(projectCollectionRef);
+
+            const filteredData = data.docs.map((doc) => ({
+                ...doc.data(),
+                id: doc.id,
+            })) as {
+                id: string;
+                title: string;
+                desc: string;
+                date: string;
+                technologies: string[];
+                image: string;
+            }[];
+
+            console.log(filteredData);
+
+            setProjects(filteredData);
+        };
+
+        getProjectList();
+    }, [projectCollectionRef]);
 
     const mobileMenuDisplayBlocK = () => {
         setMobileMenuDisplay('block');
         setCardsDisplay('none');
     };
+
     const mobileMenuDisplayNone = () => {
         setMobileMenuDisplay('none');
         setCardsDisplay('flex');
     };
+
     function checkDeviceWidth() {
         if (window.matchMedia('(min-width: 700px)').matches) {
             setMobileMenuDisplay('none');
@@ -23,7 +63,13 @@ function App() {
         }
     }
 
-    window.addEventListener('resize', checkDeviceWidth);
+    useEffect(() => {
+        window.addEventListener('resize', checkDeviceWidth);
+        return () => {
+            window.removeEventListener('resize', checkDeviceWidth);
+        };
+    }, []);
+
     return (
         <div className="App">
             <Main />
@@ -33,7 +79,7 @@ function App() {
                 mobileMenuDisplayNone={mobileMenuDisplayNone}
             />
             <div className="data" style={{ display: cardsDisplay }}>
-                {data.map((card) => {
+                {projects.map((card) => {
                     return (
                         <Card
                             title={card.title}
@@ -48,13 +94,13 @@ function App() {
                                             return FaSass;
                                         case 'FaNodeJs':
                                             return FaNodeJs;
-                                        // Add more cases for other technologies as needed
                                         default:
                                             return FaNodeJs;
                                     }
                                 },
                             )}
                             image={card.image}
+                            key={card.id}
                         />
                     );
                 })}
