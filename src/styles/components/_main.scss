@@ -38,27 +38,27 @@ section {
         transform: rotate(-30deg);
 
         div {
-            animation: animate1 160s linear infinite;
-            animation-delay: -160s;
+            animation: animate1 640s linear infinite;
+            animation-delay: -640s;
         }
 
         div {
             &:nth-child(2) {
-                animation: animate2 160s linear infinite;
-                animation-delay: -80s;
+                animation: animate2 640s linear infinite;
+                animation-delay: -320s;
             }
         }
 
         &:nth-child(even) {
             div {
-                animation: animate3 160s linear infinite;
-                animation-delay: -160s;
+                animation: animate3 640s linear infinite;
+                animation-delay: -640s;
             }
 
             div {
                 &:nth-child(2) {
-                    animation: animate4 160s linear infinite;
-                    animation-delay: -80s;
+                    animation: animate4 640s linear infinite;
+                    animation-delay: -320s;
                 }
             }
         }

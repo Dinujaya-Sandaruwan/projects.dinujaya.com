@@ -1,40 +1,108 @@
-import React from 'react';
+import { FaHome, FaYoutube, FaReact } from 'react-icons/fa';
+import { BsFillBookmarkStarFill, BsGithub } from 'react-icons/bs';
+import { ImMenu, ImHome } from 'react-icons/im';
+import { AiOutlineClose } from 'react-icons/ai';
+
 // import './styles.css';
 
-const Title: React.FC = () => {
-    return (
-        <div className="waviy">
-            {/* <span style={{ '--i': 1 } as React.CSSProperties}>D</span>
-            <span style={{ '--i': 2 } as React.CSSProperties}>I</span>
-            <span style={{ '--i': 3 } as React.CSSProperties}>N</span>
-            <span style={{ '--i': 4 } as React.CSSProperties}>U</span>
-            <span style={{ '--i': 5 } as React.CSSProperties}>J</span>
-            <span style={{ '--i': 6 } as React.CSSProperties}>A</span>
-            <span style={{ '--i': 7 } as React.CSSProperties}>Y</span>
-            <span style={{ '--i': 8 } as React.CSSProperties}>A</span>
-            <span style={{ '--i': 9 } as React.CSSProperties}>'</span>
-            <span style={{ '--i': 10 } as React.CSSProperties}>&nbsp;</span>
-            <span style={{ '--i': 11 } as React.CSSProperties}>P</span>
-            <span style={{ '--i': 12 } as React.CSSProperties}>R</span>
-            <span style={{ '--i': 13 } as React.CSSProperties}>O</span>
-            <span style={{ '--i': 14 } as React.CSSProperties}>J</span>
-            <span style={{ '--i': 15 } as React.CSSProperties}>E</span>
-            <span style={{ '--i': 16 } as React.CSSProperties}>C</span>
-            <span style={{ '--i': 17 } as React.CSSProperties}>T</span>
-            <span style={{ '--i': 18 } as React.CSSProperties}>S</span> */}
+interface Props {
+    mobileMenuDisplay: string;
+    mobileMenuDisplayBlocK: () => void;
+    mobileMenuDisplayNone: () => void;
+}
 
-            <span style={{ '--i': 1 } as React.CSSProperties}>M</span>
-            <span style={{ '--i': 2 } as React.CSSProperties}>Y</span>
-            <span style={{ '--i': 3 } as React.CSSProperties}>&nbsp;</span>
-            <span style={{ '--i': 4 } as React.CSSProperties}>P</span>
-            <span style={{ '--i': 5 } as React.CSSProperties}>R</span>
-            <span style={{ '--i': 6 } as React.CSSProperties}>O</span>
-            <span style={{ '--i': 7 } as React.CSSProperties}>J</span>
-            <span style={{ '--i': 8 } as React.CSSProperties}>E</span>
-            <span style={{ '--i': 9 } as React.CSSProperties}>C</span>
-            <span style={{ '--i': 10 } as React.CSSProperties}>T</span>
-            <span style={{ '--i': 11 } as React.CSSProperties}>S</span>
-        </div>
+const Title = ({
+    mobileMenuDisplay,
+    mobileMenuDisplayBlocK,
+    mobileMenuDisplayNone,
+}: Props) => {
+    return (
+        <>
+            <div>
+                <nav className="desktopMenu">
+                    <div className="navList">
+                        <a
+                            href="http://projects.dinujaya.com/"
+                            className="navLink"
+                            target="_blank"
+                        >
+                            <div className="navItem">
+                                <ImHome className="listIcon" />
+                                Home
+                            </div>
+                        </a>
+                        <a
+                            href="https://youtube.com/playlist?list=PLv-22kGnDnb0Bjk5Bq0ifAUs29qwa78iR"
+                            className="navLink"
+                            target="_blank"
+                        >
+                            <div className="navItem">
+                                <FaYoutube className="listIcon" />
+                                YT Playlist
+                            </div>
+                        </a>
+                        <a
+                            href="http://bookmarks.dinujaya.com/"
+                            className="navLink"
+                            target="_blank"
+                        >
+                            <div className="navItem">
+                                <BsFillBookmarkStarFill className="listIcon" />
+                                BookMarks
+                            </div>
+                        </a>
+                        <a
+                            href="https://github.com/Dinujaya-Sandaruwan/React-SCSS-TypeScript-Node_boilerplate"
+                            className="navLink"
+                            target="_blank"
+                        >
+                            <div className="navItem">
+                                <FaReact className="listIcon" />
+                                Boilerplate
+                            </div>
+                        </a>
+                    </div>
+                    <ImMenu
+                        className="burgerMenu"
+                        onClick={mobileMenuDisplayBlocK}
+                    />
+                    <a
+                        href="https://github.com/Dinujaya-Sandaruwan"
+                        target="_blank"
+                    >
+                        <BsGithub className="githubICon" />
+                    </a>
+                </nav>
+                <nav
+                    className="mobileMenu"
+                    id="mobileMenu"
+                    style={{ display: mobileMenuDisplay }}
+                >
+                    <div className="mobileMenuItem">
+                        <span className="close" onClick={mobileMenuDisplayNone}>
+                            <AiOutlineClose className="closeIcon" />
+                        </span>
+                        <a className="navLink" href="">
+                            <div className="navItemMobile odd">Home</div>
+                        </a>
+                        <a className="navLink" href="">
+                            <div className="navItemMobile even">
+                                YT Playlist
+                            </div>
+                        </a>
+                        <a className="navLink" href="">
+                            <div className="navItemMobile odd">BookMarks</div>
+                        </a>
+                        <a className="navLink" href="">
+                            <div className="navItemMobile even">
+                                Boilerplate
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <h1 className="heading">DINUJAYA'S PROJECTS</h1>
+        </>
     );
 };
 

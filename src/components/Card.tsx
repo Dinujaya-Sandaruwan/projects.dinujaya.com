@@ -1,28 +1,34 @@
-import { FaReact, FaNodeJs, FaSass } from 'react-icons/fa';
 import { MdDateRange } from 'react-icons/md';
 import mayuratImg from '../assets/mayurapada.lk.png';
 import meImg from '../assets/me.jpg';
+import { IconType } from 'react-icons';
 
-export const Card = () => {
+interface Props {
+    title: string;
+    desc: string;
+    date: string;
+    technologies: Array<IconType & { className?: string }>;
+    image: string;
+}
+
+export const Card = ({ title, desc, date, technologies, image }: Props) => {
     return (
         <div className="nft">
             <div className="main">
-                <img className="tokenImage" src={mayuratImg} alt="NFT" />
-                <h2>Mayurapada.lk</h2>
-                <p className="description">
-                    Official wbsite of Mayurapada Central College
-                </p>
+                <img className="tokenImage" src={image} alt="NFT" />
+                <h2>{title}</h2>
+                <p className="description">{desc}</p>
                 <div className="tokenInfo">
                     <div className="price">
                         <p>
-                            <FaReact className="tech-icons" />
-                            <FaSass className="tech-icons" />
-                            <FaNodeJs className="tech-icons" />
+                            {technologies.map((Icon, index) => (
+                                <Icon key={index} className="tech-icons" />
+                            ))}
                         </p>
                     </div>
                     <div className="duration">
                         <MdDateRange className="duration__icon" />
-                        <p>24/12/2022</p>
+                        <p>{date}</p>
                     </div>
                 </div>
                 <hr />
