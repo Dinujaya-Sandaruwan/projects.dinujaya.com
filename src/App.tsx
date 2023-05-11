@@ -2,7 +2,49 @@ import { Main } from './components/Main';
 import { Card } from './components/Card';
 import Title from './components/Title';
 import { useEffect, useState } from 'react';
-import { FaReact, FaNodeJs, FaSass } from 'react-icons/fa';
+
+// Import Icons
+import {
+    FaCss3Alt,
+    FaSass,
+    FaPython,
+    FaReact,
+    FaJava,
+    FaVuejs,
+    FaElementor,
+    FaStrava,
+    FaThemeco,
+} from 'react-icons/fa';
+import { AiOutlineHtml5 } from 'react-icons/ai';
+import {
+    SiPug,
+    SiTailwindcss,
+    SiChakraui,
+    SiPostgresql,
+    SiNodedotjs,
+    SiJavascript,
+    SiTypescript,
+    SiElectron,
+    SiCsharp,
+    SiCplusplus,
+    SiDotnet,
+    SiLaravel,
+    SiFirebase,
+    SiMongodb,
+    SiNextdotjs,
+    SiArduino,
+    SiFlutter,
+    SiGoland,
+    SiAdobephotoshop,
+    SiAdobepremierepro,
+    SiDart,
+    SiMicrobit,
+} from 'react-icons/si';
+import { BsBootstrap, BsFiletypePhp, BsWordpress } from 'react-icons/bs';
+import { VscJson } from 'react-icons/vsc';
+import { TbBrandReactNative } from 'react-icons/tb';
+import { IoLogoIonic } from 'react-icons/io';
+import { MdReportGmailerrorred } from 'react-icons/md';
 
 import { db } from './config/firebase';
 import { getDocs, collection } from 'firebase/firestore';
@@ -18,6 +60,7 @@ function App() {
             date: string;
             technologies: string[];
             image: string;
+            url: string;
         }[]
     >([]);
     const projectCollectionRef = collection(db, 'projects');
@@ -36,6 +79,7 @@ function App() {
                 date: string;
                 technologies: string[];
                 image: string;
+                url: string;
             }[];
 
             console.log(filteredData);
@@ -81,27 +125,101 @@ function App() {
             <div className="data" style={{ display: cardsDisplay }}>
                 {projects.map((card) => {
                     return (
-                        <Card
-                            title={card.title}
-                            desc={card.desc}
-                            date={card.date}
-                            technologies={card.technologies.map(
-                                (technology) => {
-                                    switch (technology) {
-                                        case 'FaReact':
-                                            return FaReact;
-                                        case 'FaSass':
-                                            return FaSass;
-                                        case 'FaNodeJs':
-                                            return FaNodeJs;
-                                        default:
-                                            return FaNodeJs;
-                                    }
-                                },
-                            )}
-                            image={card.image}
-                            key={card.id}
-                        />
+                        <a
+                            href={card.url}
+                            target="_BLANK"
+                            style={{ color: 'white' }}
+                        >
+                            <Card
+                                title={card.title}
+                                desc={card.desc}
+                                date={card.date}
+                                technologies={card.technologies.map(
+                                    (technology) => {
+                                        switch (technology) {
+                                            case 'html':
+                                                return AiOutlineHtml5;
+                                            case 'pug':
+                                                return SiPug;
+                                            case 'css':
+                                                return FaCss3Alt;
+                                            case 'sass':
+                                                return FaSass;
+                                            case 'tailwind':
+                                                return SiTailwindcss;
+                                            case 'chakraui':
+                                                return SiChakraui;
+                                            case 'php':
+                                                return BsFiletypePhp;
+                                            case 'sql':
+                                                return SiPostgresql;
+                                            case 'node':
+                                                return SiNodedotjs;
+                                            case 'javascript':
+                                                return SiJavascript;
+                                            case 'typescript':
+                                                return SiTypescript;
+                                            case 'python':
+                                                return FaPython;
+                                            case 'ajax':
+                                                return VscJson;
+                                            case 'electron':
+                                                return SiElectron;
+                                            case 'c#':
+                                                return SiCsharp;
+                                            case 'c++':
+                                                return SiCplusplus;
+                                            case 'dotnet':
+                                                return SiDotnet;
+                                            case 'laravel':
+                                                return SiLaravel;
+                                            case 'firebase':
+                                                return SiFirebase;
+                                            case 'mongodb':
+                                                return SiMongodb;
+                                            case 'wordpress':
+                                                return BsWordpress;
+                                            case 'elementor':
+                                                return FaElementor;
+                                            case 'astra':
+                                                return FaStrava;
+                                            case 'ionic':
+                                                return IoLogoIonic;
+                                            case 'theme':
+                                                return FaThemeco;
+                                            case 'react':
+                                                return FaReact;
+                                            case 'reactnative':
+                                                return TbBrandReactNative;
+                                            case 'nextjs':
+                                                return SiNextdotjs;
+                                            case 'arduino':
+                                                return SiArduino;
+                                            case 'flutter':
+                                                return SiFlutter;
+                                            case 'java':
+                                                return FaJava;
+                                            case 'go':
+                                                return SiGoland;
+                                            case 'photoshop':
+                                                return SiAdobephotoshop;
+                                            case 'premiere':
+                                                return SiAdobepremierepro;
+                                            case 'dart':
+                                                return SiDart;
+                                            case 'vue':
+                                                return FaVuejs;
+                                            case 'microbit':
+                                                return SiMicrobit;
+                                            default:
+                                                return MdReportGmailerrorred;
+                                        }
+                                    },
+                                )}
+                                image={card.image}
+                                key={card.id}
+                            />
+                        </a>
                     );
                 })}
             </div>

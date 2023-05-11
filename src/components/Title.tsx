@@ -22,7 +22,7 @@ const Title = ({
                 <nav className="desktopMenu">
                     <div className="navList">
                         <a
-                            href="http://projects.dinujaya.com/"
+                            href="http://dinujaya.com/"
                             className="navLink"
                             target="_blank"
                         >
