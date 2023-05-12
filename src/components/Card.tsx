@@ -15,7 +15,11 @@ export const Card = ({ title, desc, date, technologies, image }: Props) => {
     return (
         <div className="nft">
             <div className="main">
-                <img className="tokenImage" src={image} alt="NFT" />
+                <img
+                    className="tokenImage"
+                    src={image}
+                    alt="Website Preview Image"
+                />
                 <h2>{title}</h2>
                 <p className="description">{desc}</p>
                 <div className="tokenInfo">

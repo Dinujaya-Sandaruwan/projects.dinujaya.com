@@ -82,18 +82,34 @@ const Title = ({
                         <span className="close" onClick={mobileMenuDisplayNone}>
                             <AiOutlineClose className="closeIcon" />
                         </span>
-                        <a className="navLink" href="">
+                        <a
+                            className="navLink"
+                            href="http://dinujaya.com/"
+                            target="_blank"
+                        >
                             <div className="navItemMobile odd">Home</div>
                         </a>
-                        <a className="navLink" href="">
+                        <a
+                            className="navLink"
+                            href="https://youtube.com/playlist?list=PLv-22kGnDnb0Bjk5Bq0ifAUs29qwa78iR"
+                            target="_blank"
+                        >
                             <div className="navItemMobile even">
                                 YT Playlist
                             </div>
                         </a>
-                        <a className="navLink" href="">
+                        <a
+                            className="navLink"
+                            href="http://bookmarks.dinujaya.com/"
+                            target="_blank"
+                        >
                             <div className="navItemMobile odd">BookMarks</div>
                         </a>
-                        <a className="navLink" href="">
+                        <a
+                            className="navLink"
+                            href="https://github.com/Dinujaya-Sandaruwan/React-SCSS-TypeScript-Node_boilerplate"
+                            target="_blank"
+                        >
                             <div className="navItemMobile even">
                                 Boilerplate
                             </div>
