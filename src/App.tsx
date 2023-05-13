@@ -82,12 +82,15 @@ function App() {
                 image: string;
                 url: string;
             }[];
+            console.log(filteredData);
 
             setProjects(filteredData);
         };
 
         getProjectList();
-    }, [projectCollectionRef]);
+    }, []);
+
+    // projectCollectionRef
 
     const mobileMenuDisplayBlocK = () => {
         setMobileMenuDisplay('block');

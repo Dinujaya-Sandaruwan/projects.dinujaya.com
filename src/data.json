@@ -1,16 +1,163 @@
 [
     {
-        "title": "Mayurapada.lk",
-        "desc": "Official Website of Mayurapada Central College",
-        "date": "24/12/2022",
-        "technologies": ["FaReact", "FaSass", "FaNodeJs"],
-        "image": "https://github-production-user-asset-6210df.s3.amazonaws.com/88492493/237707133-d0596088-05d8-45d8-9bcd-e715a8f8fee4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230511%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230511T134640Z&X-Amz-Expires=300&X-Amz-Signature=0ea9e4fab0adc96b235703d4f0351d26aae01c7503dc8905ec83460a9bfca56b&X-Amz-SignedHeaders=host&actor_id=88492493&key_id=0&repo_id=639452315"
+        "sort": "18-Guess-This-Code",
+        "title": "Guess This Code",
+        "desc": "A game made just for true programmers",
+        "date": "25/04/2022",
+        "technologies": ["html", "css", "jquery", "api"],
+        "image": "https://user-images.githubusercontent.com/88492493/237848589-eea84cbf-c1dd-431f-94ab-e11e44f34405.png"
     },
     {
+        "sort": "17-Game-Hub",
+        "title": "Game Hub",
+        "desc": "Mosh Hamedani's react course final project",
+        "date": "16/03/2023",
+        "technologies": ["react", "chakraui", "typescript", "api"],
+        "image": "https://user-images.githubusercontent.com/88492493/237848689-dab8594b-8d96-4b90-b71a-d5ad07e4bc70.png"
+    },
+    {
+        "sort": "16-AI-Article-Summarizer",
+        "title": "AI Article Summarizer",
+        "desc": "Summarise your articles with OpenAI GPT 4",
+        "date": "21/03/2023",
+        "technologies": ["react", "tailwind", "typescript", "api"],
+        "url": "https://sumz.dinujaya.com/",
+        "image": "https://user-images.githubusercontent.com/88492493/237848800-9938cc72-632c-4a1a-811a-d5fed7cd29a0.png"
+    },
+    {
+        "sort": "15-Spotify-Clone",
+        "title": "Spotify Clone",
+        "desc": "Working Spotify clone with it's own SQL database",
+        "date": "15/02/2021",
+        "technologies": ["php", "sass", "javascript", "sql"],
+        "url": "https://spotifyclone.lol/",
+        "image": "https://user-images.githubusercontent.com/88492493/237848920-d218b976-5d8c-4a4e-8c2a-a0a8932af66e.png"
+    },
+    {
+        "sort": "14-Mayurapada.lk",
         "title": "Mayurapada.lk",
-        "desc": "Official Website of Mayurapada Central College",
-        "date": "24/12/2022",
-        "technologies": ["FaReact", "FaSass", "FaNodeJs"],
-        "image": "https://github-production-user-asset-6210df.s3.amazonaws.com/88492493/237707133-d0596088-05d8-45d8-9bcd-e715a8f8fee4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230511%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230511T134640Z&X-Amz-Expires=300&X-Amz-Signature=0ea9e4fab0adc96b235703d4f0351d26aae01c7503dc8905ec83460a9bfca56b&X-Amz-SignedHeaders=host&actor_id=88492493&key_id=0&repo_id=639452315"
+        "desc": "Official website of Mayurapada Central College Narammala",
+        "date": "21/06/2020",
+        "technologies": ["wordpress", "theme"],
+        "url": "https://mayurapada.lk/",
+        "image": "https://user-images.githubusercontent.com/88492493/237850934-a89e3dc6-a1cb-4da3-9b7d-d651eefec511.png"
+    },
+    {
+        "sort": "13-Cobol-X",
+        "title": "Cobol X",
+        "desc": "A Fictional Programming Language for JAVA institute Competition",
+        "date": "20/04/2023",
+        "technologies": ["wordpress", "elementor", "astra"],
+        "url": "https://cobol-x.dinujaya.com/",
+        "image": "https://user-images.githubusercontent.com/88492493/237851113-95ff0ab0-8020-4f8c-bfc5-9fb30e026ca1.png"
+    },
+    {
+        "sort": "12-Automated-Youtube-Channel",
+        "title": "Youtube Automation",
+        "desc": "This scrept will automate youtube channel with youtube API",
+        "date": "14/02/2023",
+        "technologies": ["python", "api"],
+        "url": "https://github.com/Dinujaya-Sandaruwan/Auto-Upload-Videos-To-Youtube",
+        "image": "https://user-images.githubusercontent.com/88492493/237849458-69958350-4acf-4e61-9a63-530e1648166f.png"
+    },
+    {
+        "sort": "11-Under-Construction",
+        "title": "Under Construction",
+        "desc": "100% transparent under construction page for Mayurapada C.C",
+        "date": "04/05/2020",
+        "technologies": ["html", "javascript", "css"],
+        "url": "https://404.dinujaya.com/",
+        "image": "https://user-images.githubusercontent.com/88492493/237950370-30d7d48b-0888-423d-a67f-b190418139aa.png"
+    },
+    {
+        "sort": "10-My-Spotify-CLI",
+        "title": "My Spotify CLI",
+        "desc": "Command line interface for spotifyclone.lol",
+        "date": "18/12/2022",
+        "technologies": ["python", "selenium"],
+        "url": "https://github.com/Dinujaya-Sandaruwan/Spotify-Automation-with-Python-Selenium",
+        "image": "https://user-images.githubusercontent.com/88492493/237850134-8d732ead-d5a1-465b-910c-c5a831b8add8.png"
+    },
+    {
+        "sort": "09-Cool-CSS-Snippets",
+        "title": "Cool CSS Snippets",
+        "desc": "VSCode extension that gives CSS snippets",
+        "date": "09/05/2022",
+        "technologies": ["css", "javascript", "node"],
+        "url": "https://marketplace.visualstudio.com/items?itemName=DinujayaSandaruwan.cool-css-snippets",
+        "image": "https://user-images.githubusercontent.com/88492493/237850272-8ddc990b-61f8-4964-aba7-fefb53948044.png"
+    },
+
+    {
+        "sort": "08-Dinujaya-s-Notes",
+        "title": "Dinujaya's Notes",
+        "desc": "This contains a lot of the notes I took while learning programming",
+        "date": "12/05/2023",
+        "technologies": ["html", "sass", "javascript"],
+        "url": "https://notes.dinujaya.com/",
+        "image": "https://user-images.githubusercontent.com/88492493/237850889-438fbc8e-37f2-47d7-92ae-e8a5cdee2a46.png"
+    },
+    {
+        "sort": "07-My-React-Boilerplate",
+        "title": "My React Boilerplate",
+        "desc": "React SCSS TypeScript Node Boilerplate for WEB Development",
+        "date": "28/02/2023",
+        "technologies": ["react", "typescript", "sass", "node", "photoshop"],
+        "url": "https://github.com/Dinujaya-Sandaruwan/React-SCSS-TypeScript-Node_boilerplate",
+        "image": "https://user-images.githubusercontent.com/88492493/237851366-8add9bce-bd7f-4191-8d9c-4a2cc68edf7c.png"
+    },
+    {
+        "sort": "06-Get-Youtube-Video-Data",
+        "title": "Get Youtube Data",
+        "desc": "Get youtube video details by entering video URL",
+        "date": "8/02/2023",
+        "technologies": ["html", "sass", "javascript", "node", "api"],
+        "url": "https://github.com/Dinujaya-Sandaruwan/Youtube-Data-From-API",
+        "image": "https://user-images.githubusercontent.com/88492493/237850468-84f80d1a-90b6-497f-9801-926797e28b29.png"
+    },
+    {
+        "sort": "05-MarkDown-Notes",
+        "title": "MarkDown Notes",
+        "desc": "Take notes with markdown and localStorage",
+        "date": "17/01/2023",
+        "technologies": ["react", "typescript", "bootstrap"],
+        "url": "https://markdown-notes.dinujaya.com/",
+        "image": "https://user-images.githubusercontent.com/88492493/237852411-07f8d54c-6863-4581-b410-2ffbe8fae993.png"
+    },
+    {
+        "sort": "04-CSS-Gradients",
+        "title": "CSS Gradients",
+        "desc": "Copy CSS gradients with react",
+        "date": "03/01/2022",
+        "technologies": ["react", "javascript", "sass"],
+        "url": "https://github.com/Dinujaya-Sandaruwan/Copy-CSS-Gradients-With-React",
+        "image": "https://user-images.githubusercontent.com/88492493/237852590-588e1d23-fe3a-485f-afc5-9564e8753890.png"
+    },
+    {
+        "sort": "03-Auto-Screenshot-Taker",
+        "title": "Auto Screenshot Ta...",
+        "desc": "This script will take screenshots using image recognition",
+        "date": "28/11/2022",
+        "technologies": ["python", "pythonpkg"],
+        "url": "https://github.com/Dinujaya-Sandaruwan/Auto-screenshots-for-DP-Education",
+        "image": "https://user-images.githubusercontent.com/88492493/237852954-9ff7a7e2-c387-4275-a26f-64fb83f4014e.png"
+    },
+    {
+        "sort": "02-AL-Tech-quiz",
+        "title": "AL Tech quiz",
+        "desc": "A random quiz generator with sql database",
+        "date": "16/04/2021",
+        "technologies": ["html", "css", "php", "ajax", "javascript"],
+        "url": "http://quiz.dinujaya.com/",
+        "image": "https://user-images.githubusercontent.com/88492493/237853034-8bad8722-8163-431a-8bb4-16a123135a99.png"
+    },
+    {
+        "sort": "01-Abhiyoga-Competition",
+        "title": "Abhiyoga Competi...",
+        "desc": "A website I made for Abhiyoga Competition",
+        "date": "1/06/2020",
+        "technologies": ["html", "css", "javascript"],
+        "url": "https://abhiyoga.dinujaya.com/",
+        "image": "https://user-images.githubusercontent.com/88492493/237853155-7e55e065-b6af-48fb-bae9-d7b0a2d0c5bc.png"
     }
 ]
