@@ -1,54 +1,69 @@
-# For chatGPT
+#   projects.dinujaya.com
 
-TODO: Describe Project
+![Project Screenshot](https://github.com/Dinujaya-Sandaruwan/projects.dinujaya.com/assets/88492493/247af2ad-6dfc-4612-b37c-586f1dc5a536)
 
-Package.json :
+[Live Preview](https://projects.dinujaya.com/)
 
-TODO: Add Package.json
+## About The Project
 
-Those are the details about my project and I need to add this in my GitHub.
+This project showcases Dinujaya's diverse collection of projects, including web, desktop, and mobile apps. Each page provides an overview of features and technologies used. It serves as a perfect portfolio for potential employers or those curious about Dinujaya's work.
 
-Write a complete readme.md file for this project
+## Used Technologies
 
-Readme.md file details :
+-   React: A JavaScript library for building user interfaces.
+-   Firebase: A platform for building web and mobile applications with serverless backend services.
+-   React Icons: A collection of customizable icons for React applications.
 
-Title :- TODO: add Title
+## Usage
 
-1.  About The Project -> (A description about project. use more than 50 words)
+The projects.dinujaya.com website provides an overview of various projects developed by Dinujaya. Each project page highlights the features and technologies used, giving users a comprehensive understanding of Dinujaya's work. Users can explore different projects and their functionalities to get an idea of Dinujaya's expertise.
 
-Need to add a screenshot of this project (align-center)(url- TODO: https://dinujaya.com/img.jpg) This image should link to live preview page(url - TODO: http://dinujaya.com/)
+## How to Use
 
-2.  Used Technologies -> (Add what I used to build this project. programming languages, tools and modules. Explain what are those technologies with short description)
-3.  Usage -> (Give complete usetage of this project, Features, how to use them and how they will be usefull to user)
-4.  How to use -> (Give a complete detailed guid about how to install this project) => (
+To get started with this project, follow the steps below:
 
-    How to Clone this repository (), Install the dependencies, Run the development server
-    LocalHost URL = http://localhost:5173/
-    Repository URL = TODO: REPO URL
+1.  Clone this repository using the following command:
+     
+    `git clone https://github.com/Dinujaya-Sandaruwan/projects.dinujaya.com.git` 
+    
+2.  Install the project dependencies by running the following command:
 
-    Explain how to do above things
-    )
+    `npm install` 
+    
+3.  Run the development server using the following command:
+        
+    `npm run dev` 
+    
+4.  Access the project locally by navigating to [http://localhost:5173/](http://localhost:5173/) in your web browser.
+    
 
-5.  Contributing -> (Explain how to contribute this project)
-6.  License -> (MIT License) (Explain how MIT License works)
-7.  Contact -> (Add my contact details in linked texts) => (
+You can find the repository for this project at [https://github.com/Dinujaya-Sandaruwan/projects.dinujaya.com](https://github.com/Dinujaya-Sandaruwan/projects.dinujaya.com).
 
-    this is linked text and URL
+## Contributing
 
-    FaceBook : https://www.facebook.com/dinujaya.sandaruwan/
-    Linkedin : https://www.linkedin.com/in/dinujaya-sandaruwan-23bb09201/
-    Sololearn : https://www.sololearn.com/profile/28608081
-    Youtube : https://www.youtube.com/channel/UCVwXuCDRdBjzNUOWYOCO_xg
+Contributions are welcome! If you would like to contribute to this project, please follow these steps:
 
-)(Email : info.dinujaya@gmail.com)
+1.  Fork the repository.
+2.  Create a new branch.
+3.  Make your changes.
+4.  Commit your changes.
+5.  Push your changes to your forked repository.
+6.  Submit a pull request.
 
-8.  Acknowledgments -> (
+## License
 
-        Idea :
-        Inspired :
+This project is licensed under the MIT License. For more information, please refer to the [LICENSE](https://opensource.org/license/mit/) file.
 
-        Write about how they helped to do this project
+## Contact
 
-    )
+You can reach out to Dinujaya for any inquiries or feedback:
 
-Change anything other than Details as you wish. Create a beautiful template.
+-   Facebook: [Dinujaya Sandaruwan](https://www.facebook.com/dinujaya.sandaruwan/)
+-   LinkedIn: [Dinujaya Sandaruwan](https://www.linkedin.com/in/dinujaya-sandaruwan-23bb09201/)
+-   Sololearn: [Dinujaya Sandaruwan](https://www.sololearn.com/profile/28608081)
+-   YouTube: [Dinujaya Sandaruwan](https://www.youtube.com/channel/UCVwXuCDRdBjzNUOWYOCO_xg)
+-   Email: [info.dinujaya@gmail.com](mailto:info.dinujaya@gmail.com)
+
+## Acknowledgments
+
+This project was inspired by Mosh Hamedani's work. Their guidance and expertise have been instrumental in the development of this project.
